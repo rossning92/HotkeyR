@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/no-select.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- jquery.scrollbar -->
+    <!-- <link rel="stylesheet" href="css/jquery.scrollbar.css">
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <link rel="stylesheet" href="css/prettify.css">
+    <script src="js/prettify.js"></script> -->
+    
+    <script src="js/no-right-click.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // jQuery('#mainPanel').scrollbar();
+      });
+    </script>
+  </head>
+  <body class="noselect">
+    <div class="border">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper blue darken-4">
+            <a href="#" class="brand-logo left"><img src="images/logo.png"></a>
+            <!-- <a href="#" class="brand-logo">Logo</a> -->
+            <ul id="nav-mobile" class="right">
+              <!-- <li><a href="#"><i class="material-icons left">add_box</i>Add Hotkey</a></li> -->
+              <li><a class="dropdown-button" data-activates='dropdown1' data-constrainWidth="false" data-gutter="2" data-belowOrigin="false" data-hover="true" href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <!-- <li><a href="#!" class="black-text"><i class="material-icons">settings</i>Settings</a></li> -->
+        <li><a href="#!" class="black-text"><i class="material-icons">help</i>Help</a></li>
+        <li><a href="#!" class="black-text" onclick="AHK('aboutApp')"><i class="material-icons">people</i>About</a></li>
+        <li><a href="#!" class="black-text" onclick="AHK('exitApp')"><i class="material-icons">exit_to_app</i>Exit Entirely</a></li>
+      </ul>
+      
+      <div class="scrollbar-outer">
+        <table class="bordered highlight fixed-table">
+          <colgroup>
+          <col style="width: 42px;">
+          <col style="width: 42px;align-content: center;">
+          <col style="width: 100px;align-content: center;">
+          <col>
+          <col style="width: 50px;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Icon</th>
+              <th>Key</th>
+              <th>Process</th>
+              <th>Window Title</th>
+              <th>OnTop</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>A</td>
+              <td>Example1.exe</td>
+              <td>Window Title 1</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+            <tr>
+              <td><img src="#"/></td>
+              <td>B</td>
+              <td>Example2.exe</td>
+              <td>Window Title 2</td>
+              <td><a class="btn-floating grey lighten-2"><i class="material-icons">vertical_align_top</i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
