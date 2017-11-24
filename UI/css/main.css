@@ -1,0 +1,92 @@
+.key2 {
+  background: url(images/key.png) no-repeat;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #7F7F7F;
+}
+
+table td {
+  padding: 5px;
+}
+
+.main-table {
+  width: 100%;
+}
+
+.fixed-table {
+
+  /* magic */
+  width: 100%;
+  table-layout: fixed;  /*not really necessary, removes extra white space */
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+
+.fixed-table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowrap {
+
+  /* used to keep buttons' text in a single line,
+   * remove this class to allow natural line-breaking.
+   */
+  white-space: nowrap;
+}
+
+th {
+  text-align: center;
+}
+
+td:nth-child(2) {
+  text-align: center;
+}
+
+td > img {
+  vertical-align: middle;
+}
+
+td > .btn-flat {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.processName {
+  color: #C0C0C0;
+}
+
+.winTitle {
+  font-weight: bold;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.highlight-orange {
+  background-color: #fff3e0;
+}
+
+.activeWindow {
+  background-color: #ffcc80;
+}
+
+.scrollbar-outer {
+  display: block;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.border {
+  border: 1px solid #aaa;
+}
