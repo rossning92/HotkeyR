@@ -394,6 +394,9 @@ updateUI(hwnd) {
 $*CapsLock::
 Suspend, Permit ; Mark the current subroutine as being exempt from suspension
 {   
+	; HACK: sometimes caps lock has been turned on
+	SetCapsLockState, AlwaysOff
+
     if ( not hw_isReady() ) {
         KeyWait, CapsLock
         return
