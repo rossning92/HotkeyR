@@ -90,3 +90,7 @@ td > .btn-flat {
 .border {
   border: 1px solid #aaa;
 }
+
+body {
+  overflow-x: hidden;
+}

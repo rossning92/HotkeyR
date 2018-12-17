@@ -425,7 +425,7 @@ Suspend, Permit ; Mark the current subroutine as being exempt from suspension
     updateTbody()
     
     sleep 10
-    hw_height := g_webBrowser.document.body.offsetHeight
+    ; hw_height := g_webBrowser.document.body.offsetHeight
     ; if (hw_height > 600) {
     ;     hw_height := 600
     ; }

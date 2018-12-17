@@ -2,7 +2,7 @@
 
 
 hw_width := 500
-hw_height := 800
+hw_height := 600
 hw_url = %A_ScriptDir%\UI\index.html
 
 hw_init()
@@ -24,7 +24,7 @@ hw_init()
     Gui, g_htmlWindow: Default
 
 
-    Gui +AlwaysOnTop -SysMenu -Caption +HwndGuiHwnd +LastFound
+    Gui +AlwaysOnTop -SysMenu -Caption +HwndGuiHwnd +LastFound -DPIScale
     ; Gui +Disabled  ; Prevents the user from interacting
     WinSet, ExStyle, +0x08000000  ; WS_EX_NOACTIVATE
     WinSet, Transparent, 0, ahk_id %GuiHwnd%
@@ -67,7 +67,7 @@ IE_DocumentComplete() ; "IE_" prefix corresponds to the 2nd param in ComObjConne
     global g_hwndWebBrowser
     global g_winList
     
-    
+    return
     ; Scale UI by screen DPI.  My testing showed that Vista with IE7 or IE9
     ; did not scale by default, but Win8.1 with IE10 did.  The scaling being
     ; done by the control itself = deviceDPI / logicalDPI.
